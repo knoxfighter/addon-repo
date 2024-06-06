@@ -24,5 +24,18 @@
 		"version_url": "https://www.deltaconnected.com/arcdps/x64/d3d11.dll.md5sum",
 		"download_type": "dll",
 		"install_mode": "binary"
+	},
+	{
+		"id": "gw2radial",
+		"name": "GW2Radial",
+		"description": "An ArenaNET-approved addon to show a convenient, customizable radial menu overlay to select a mount, novelty item and more, on the fly.",
+		"tooltip": "Provides a menu with access to all unlocked mounts with one keypress",
+		"website": "https://www.deltaconnected.com/arcdps/",
+		"developer": "FriendlyFire",
+		"host_type": "github",
+		"host_url": "Friendly0Fire/GW2Radial",
+		"download_type": "zip",
+		"zip_filename": "gw2addon_gw2radial.dll",
+		"install_mode": "binary"
 	}
 ]
