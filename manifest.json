@@ -23,7 +23,7 @@
 		"host_url": "https://www.deltaconnected.com/arcdps/gw2addon_arcdps.dll",
 		"version_url": "https://www.deltaconnected.com/arcdps/x64/d3d11.dll.md5sum",
 		"download_type": "dll",
-		"install_mode": "binary"
+		"install_mode": "gw2load"
 	},
 	{
 		"id": "gw2radial",
@@ -36,6 +36,6 @@
 		"host_url": "Friendly0Fire/GW2Radial",
 		"download_type": "zip",
 		"zip_filename": "gw2addon_gw2radial.dll",
-		"install_mode": "binary"
+		"install_mode": "gw2load"
 	}
 ]
