@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-buddy"
+name = 	"ArcDPS Buddy"
+description = "Track combat information like casts, buffs, breakbar damage, condition transfers etc."
+tooltip = "Track combat information"
+website = "https://github.com/zerthox/arcdps-buddy"
+developer = "Zerthox"
+issue_tracker = "https://github.com/zerthox/arcdps-buddy/issues"
+vcs = "https://github.com/zerthox/arcdps-buddy"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "zerthox/arcdps-buddy"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

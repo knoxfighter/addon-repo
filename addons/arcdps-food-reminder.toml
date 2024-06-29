@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-food-reminder"
+name = 	"ArcDPS Food Reminder"
+description = "Displays a reminder for your own Food/Utility item buffs. Adds an overview of Food & Utility item buffs on your Party/Squad and own characters."
+tooltip = "Track Food & Utility buffs"
+website = "https://github.com/zerthox/arcdps-food-reminder"
+developer = "Zerthox"
+issue_tracker = "https://github.com/zerthox/arcdps-food-reminder/issues"
+vcs = "https://github.com/zerthox/arcdps-food-reminder"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "zerthox/arcdps-food-reminder"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

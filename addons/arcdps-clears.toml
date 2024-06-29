@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-clears"
+name = 	"ArcDPS Clears"
+description = "Adds a window for quickly checking your current weekly clears in the game."
+tooltip = "Check your weekly clears in the game"
+website = "https://gw2scratch.com/tools/arcdps-clears"
+developer = "Sejsel"
+issue_tracker = "https://github.com/gw2scratch/arcdps-clears/issues"
+vcs = "https://github.com/gw2scratch/arcdps-clears"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "gw2scratch/arcdps-clears"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

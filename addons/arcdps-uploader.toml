@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-uploader"
+name = 	"ArcDPS uploader"
+description = "This is an extension for Arcdps that allows you to preview and upload EVTC combat logs in-game"
+tooltip = "Preview and upload EVTC combat logs in-game by datatobridge"
+website = "https://github.com/datatobridge/arcdps-uploader"
+developer = "datatobridge"
+issue_tracker = "https://github.com/datatobridge/arcdps-uploader/issues"
+vcs = "https://github.com/datatobridge/arcdps-uploader"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "datatobridge/arcdps-uploader"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

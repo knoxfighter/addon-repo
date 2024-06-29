@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-killproof-me"
+name = 	"ArcDPS Killproof.me Plugin"
+description = "This addon shows the killproofs of players, that are registered on killproof.me"
+tooltip = "Shows killproof.me data ingame"
+website = "https://github.com/knoxfighter/arcdps-killproof.me-plugin"
+developer = "knoxfighter"
+issue_tracker = "https://github.com/knoxfighter/arcdps-killproof.me-plugin/issues"
+vcs = "https://github.com/knoxfighter/arcdps-killproof.me-plugin"
+
+dependencies = ["arcdps"]
+optional_dependencies = ["arcdps-unofficial-extras"]
+#conflicts  = []
+
+[host.github]
+url = "knoxfighter/arcdps-killproof.me-plugin"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

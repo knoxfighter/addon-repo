@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-bhud"
+name = 	"ArcDPS Blish HUD Integration"
+description = "This addon provides data from the Arcdps Combat API to the Blish HUD overlay, where it can be used by different Blish HUD modules for optimization and additional functionality."
+tooltip = "Uses the ArcDPS Combat API to provide data to Blish HUD"
+website = "https://github.com/blish-hud/arcdps-bhud"
+developer = "Greaka"
+issue_tracker = "https://github.com/blish-hud/arcdps-bhud/issues"
+vcs = "https://github.com/blish-hud/arcdps-bhud"
+
+dependencies = ["arcdps"]
+optional_dependencies = ["arcdps-unofficial-extras"]
+#conflicts  = []
+
+[host.github]
+url = "blish-hud/arcdps-bhud"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-boontable"
+name = 	"ArcDPS Boon Table"
+description = "Displays squad boon uptime for a number of boons and includes information such as individual player boon uptime and their subsquad."
+tooltip = "Displays squad boon uptime"
+website = "https://github.com/knoxfighter/GW2-ArcDPS-Boon-Table"
+developer = "knoxfighter, original by MarsEdge"
+issue_tracker = "https://github.com/knoxfighter/GW2-ArcDPS-Boon-Table/issues"
+vcs = "https://github.com/knoxfighter/GW2-ArcDPS-Boon-Table"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "knoxfighter/GW2-ArcDPS-Boon-Table"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

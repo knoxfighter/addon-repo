@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-mechanics"
+name = 	"ArcDPS Mechanics Plugin"
+description = "This addon shows mechanics that players have failed during a raid encounter. A list of the failed mechanics is displayed, including which player failed what mechanic and at what time during the fight."
+tooltip = "Provides information about (failed) raid mechanics"
+website = "https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log"
+developer = "knoxfighter, original by MarsEdge"
+issue_tracker = "https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log/issues"
+vcs = "https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "knoxfighter/GW2-ArcDPS-Mechanics-Log"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

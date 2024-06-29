@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-healing-stats"
+name = 	"ArcDPS Healing Stats"
+description = "Shows personal healing statistics based on your local stats (i.e. your own healing output).\n\nThis includes outgoing healing per target and per skill, as well as filtering to only include your own subgroup/squad and to exclude minions"
+tooltip = "Shows statistics for personal healing done"
+website = "https://github.com/Krappa322/arcdps_healing_stats"
+developer = "Kappa322"
+issue_tracker = "https://github.com/Krappa322/arcdps_healing_stats/issues"
+vcs = "https://github.com/Krappa322/arcdps_healing_stats"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "Krappa322/arcdps_healing_stats"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

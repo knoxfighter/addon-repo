@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-squad-ready"
+name = 	"ArcDPS Squad Ready Plugin"
+description = "Plays audio notifications when a squad ready check is started and completed.\n\nThe ArcDPS Unofficial Extras plugin is required to be installed to function correctly."
+tooltip = "Squad Ready audio notifications"
+website = "https://github.com/cheahjs/arcdps-squad-ready-plugin"
+developer = "Deathmax"
+issue_tracker = "https://github.com/cheahjs/arcdps-squad-ready-plugin/issues"
+vcs = "https://github.com/cheahjs/arcdps-squad-ready-plugin"
+
+dependencies = ["arcdps", "arcdps-unofficial-extras"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "cheahjs/arcdps-squad-ready-plugin"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

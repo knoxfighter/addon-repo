@@ -1,0 +1,21 @@
+[package]
+
+id = "arcdps-sct"
+name = 	"ArcDPS Scrolling Combat Text"
+description = "Adds a highly customizable scrolling combat text beside the users character. Incoming damage is by default displayed on the left side, outgoing damage on the right side."
+tooltip = "Shows all damage numbers as a highly customizable wall of scrolling text."
+website = "https://github.com/Artenuvielle/GW2-SCT"
+developer = "Artenuvielle"
+issue_tracker = "https://github.com/Artenuvielle/GW2-SCT/issues"
+vcs = "https://github.com/Artenuvielle/GW2-SCT"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "Artenuvielle/GW2-SCT"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"

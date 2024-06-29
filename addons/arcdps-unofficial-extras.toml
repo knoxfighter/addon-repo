@@ -1,0 +1,20 @@
+[package]
+
+id = "arcdps-unofficial-extras"
+name = 	"ArcDPS Unofficial Extras"
+description = "This plugin provides additional information to other plugins. For example, it enables the killproof.me addon to display players who are not in the same instance.\n\nIt also has some small features by itself, such as mouse clipping, which prevents accidentally interacting with things while panning the camera"
+tooltip = "Additional features for arcdps and plugins"
+website = "https://github.com/Krappa322/arcdps_unofficial_extras_releases"
+developer = "Kappa322 & knoxfighter"
+issue_tracker = "https://github.com/Krappa322/arcdps_unofficial_extras_releases/issues"
+
+dependencies = ["arcdps"]
+#optional_dependencies = []
+#conflicts  = []
+
+[host.github]
+url = "Krappa322/arcdps_unofficial_extras_releases"
+
+[installation]
+# "arc" or "gw2load"
+mode = "arc"
