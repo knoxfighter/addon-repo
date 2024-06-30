@@ -9,15 +9,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v4
+
+      - name: Checkout out repo
+        uses: actions/checkout@v4
+        with:
+          ref: "out"
+          path: "out"
 
       - name: Create manifest
         uses: knoxfighter/generate-loading-screen@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          manifest_path: "out/manifest.json"
 
-#      - name: Deploy
-#        uses: JamesIves/github-pages-deploy-action@4.1.5
-#        with:
-#          branch: out # The branch the action should deploy to.
-#          folder: .build # The folder the action should deploy.
+#      - name: Commit and Push manifest
+#        run: |
+#          cd out
+#          git config user.name github-actions
+#          git config user.email github-actions@github.com
+#          git add .
+#          git commit -m "action manifest update"
+#          git push
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: out # The branch the action should deploy to.
+          folder: out # The folder the action should deploy.
