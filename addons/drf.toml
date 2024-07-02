@@ -1,0 +1,15 @@
+[package]
+id = "drf"
+name = 	"DRF"
+description = "Gw2 Drop Research Facilities is the ultimate loot tracking tool for Guild Wars 2. Using the Website or the BlishHUD module, you can see and track farming sessions or manage bag openings live!"
+tooltip = "Loot Tracking Tool"
+website = "https://drf.rs"
+developer = "Greaka"
+issue_tracker = "https://discord.gg/4CnKwzx7Mr"
+
+[host.standalone]
+url = "https://update.drf.rs/drf.dll"
+version_url = "https://update.drf.rs"
+
+[installation]
+mode = "gw2load"
