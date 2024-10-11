@@ -1,42 +1,66 @@
 name: Build and Deploy
+
 on:
+  # Run this workflow for all pull requests
   pull_request:
+  
+  # Only run this workflow on push in the default branch, other branches will be built by the pull_request trigger
   push:
-  #  schedule:
-  #    - cron: '0 * * * *'
+    branches: 
+      # TODO: replace with default branch name once this is merged upstream
+      - loading-screen-rework
+  
+  # Regularly run this workflow (on the default branch) to update the available versions
+  # schedule:
+  #   - cron: '0 * * * *'
+
+  # Allow manual dispatch of this workflow
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout out repo
-        uses: actions/checkout@v4
-        with:
-          ref: "out"
-          path: "out"
+      - name: Create output directory
+        run: mkdir out
 
       - name: Create manifest
         uses: knoxfighter/generate-loading-screen@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          manifest_path: "out/manifest.json"
-
-#      - name: Commit and Push manifest
-#        run: |
-#          cd out
-#          git config user.name github-actions
-#          git config user.email github-actions@github.com
-#          git add .
-#          git commit -m "action manifest update"
-#          git push
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        if: github.ref == 'refs/heads/master'
+          manifest_path: out/manifest.json
+    
+      - name: Upload manifest as artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          branch: out # The branch the action should deploy to.
-          folder: out # The folder the action should deploy.
+          path: out/
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+
+    # only run on default branch
+    # TODO: replace with this once this becomes the default branch
+    # if: github.ref_name == github.event.repository.default_branch
+    if: github.ref == 'refs/heads/loading-screen-rework'
+    
+    # setup required permissions to deploy pages
+    permissions:
+      pages: write
+      id-token: write
+
+    # deploy to the default github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
