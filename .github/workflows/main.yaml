@@ -26,8 +26,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create output directory
-        run: mkdir out
+      - name: Create output directory and include legacy addons.json
+        run: mkdir out && cp legacy/addons.json out/addons.json
 
       - name: Create manifest
         uses: knoxfighter/generate-loading-screen@main
